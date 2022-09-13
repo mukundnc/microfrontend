@@ -1,0 +1,29 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "seed package for micro frontends",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukundnc/microfrontend.git"
+  },
+  "keywords": [
+    "react",
+    "vue",
+    "microfrontend"
+  ],
+  "author": "mukund",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mukundnc/microfrontend/issues"
+  },
+  "homepage": "https://github.com/mukundnc/microfrontend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
