@@ -8,16 +8,16 @@ secondApp.innerHTML = `<style>
 </style>
 <p>second app content</p> `;
 
-customElements.define('second-app',
-  class extends HTMLElement {
-    constructor() {
-      super();
+class SecondApp extends HTMLElement {
+  constructor() {
+    super();
 
-      const templateContent = secondApp.content;
+    const templateContent = secondApp.content;
 
-      this.attachShadow({mode: 'open'}).appendChild(
-        templateContent.cloneNode(true)
-      );
-    }
+    this.attachShadow({mode: 'open'}).appendChild(
+      templateContent.cloneNode(true)
+    );
   }
-);
+}
+
+customElements.define('second-app', SecondApp);

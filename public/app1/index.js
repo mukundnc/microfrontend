@@ -8,16 +8,17 @@ firstApp.innerHTML = `<style>
 </style>
 <p>first app content</p> `;
 
-customElements.define('first-app',
-  class extends HTMLElement {
-    constructor() {
-      super();
+class FirstApp extends HTMLElement {
+  constructor() {
+    super();
 
-      const templateContent = firstApp.content;
+    const templateContent = firstApp.content;
 
-      this.attachShadow({mode: 'open'}).appendChild(
-        templateContent.cloneNode(true)
-      );
-    }
+    this.attachShadow({mode: 'open'}).appendChild(
+      templateContent.cloneNode(true)
+    );
   }
-);
+}
+
+
+customElements.define('first-app', FirstApp);
