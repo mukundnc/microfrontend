@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Web Components</title>
+    <script src="https://unpkg.com/vue@2.7.10/dist/vue.js"></script>
     <script src="./app1/index.js"></script>
     <script src="./app2/index.js"></script>
+    <script src="./v-app/index.js"></script>
+    <script src="./r-app/index.js"></script>
     <style>
         #main {
             color: blue;
@@ -17,13 +20,44 @@
             background-color: pink;
             color: black;
         }
+        .table{
+          display:table;
+        }
+        .row{
+          display: table-row;
+          height: 200px;
+        }
+        .cell{
+          display: table-cell;
+          width: 50%;
+        }
     </style>
   </head>
 
   <body>
-    <p>Text on body</p>
-    <first-app></first-app>
-    <second-app></second-app>
-    <p id="main">Main paragraph</p>
+    
+    <div class="table">
+      <p>Text on body</p>
+      <div class="row">
+        <div class="cell">
+        <first-app></first-app>
+      </div>
+      <div class="cell">
+        <second-app></second-app>
+      </div>
+      </div>
+      <div class="row">
+        <div class="cell">
+          <vue-app></vue-app>
+        </div>
+        <div class="cell">
+          <react-app></react-app>
+        </div>
+      </div>
+      <div class="row">
+        <p id="main">Main paragraph</p>
+      </div>  
+    </div>
+    
   </body>
 </html>
