@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
@@ -17,6 +16,6 @@ import App from './App';
 // reportWebVitals();
 import reactToWebComponent from "react-to-webcomponent"
 
-const WebGreeting = reactToWebComponent(App, React, ReactDOM)
+const reactApp = reactToWebComponent(App, React, ReactDOM)
 
-customElements.define("react-app", WebGreeting)
+customElements.define("react-app", reactApp)

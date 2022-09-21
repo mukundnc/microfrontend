@@ -10,6 +10,8 @@
     <script src="./app2/index.js"></script>
     <script src="./v-app/index.js"></script>
     <script src="./r-app/index.js"></script>
+    <script src="./index.js"></script>
+    <script src="./r-app-chat/static/js/main.js"></script>
     <style>
         #main {
             color: blue;
@@ -37,7 +39,7 @@
   <body>
     
     <div class="table">
-      <p>Text on body</p>
+      <!-- <p>Text on body</p> -->
       <div class="row">
         <div class="cell">
         <first-app></first-app>
@@ -55,9 +57,16 @@
         </div>
       </div>
       <div class="row">
-        <p id="main">Main paragraph</p>
+        <react-app-chat></react-app-chat>
       </div>  
     </div>
-    
+    <div class="row">
+      <div class="cell">
+        <embedded-webview src="http://localhost:8080/"></embedded-webview>
+      </div>
+      <div class="cell">
+        <embedded-webview src="http://localhost:3001/"></embedded-webview>
+      </div>
+    </div>
   </body>
 </html>
