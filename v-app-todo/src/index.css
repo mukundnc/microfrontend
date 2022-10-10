@@ -1,0 +1,27 @@
+.containerAdd {
+    min-height: 100px;  
+}
+.txtbox {
+    height: 60px;
+}
+.btn {
+    height: 40px;
+}
+.containerTodo {
+    min-width: 300px;  
+    display: inline;
+}
+.checkbox {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.message {
+    width: 270px;
+    display: inline-block;
+}
+.messageCross {
+    width: 270px;
+    text-decoration: line-through;
+    display: inline-block;
+}
