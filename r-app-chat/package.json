@@ -6,12 +6,13 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "1.1.4",
+    "react-scripts": "1.1.5",
     "react-to-webcomponent": "^2.0.0-alpha.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node ./devops/postbuild.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
