@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import withLocation from './withLocation'
+// import withLocation from './withLocation'
 import imgSrc from '../assets/user.jpg'
 // const URL = '/api/messages'
 const styles = {
@@ -17,7 +17,8 @@ class Messages extends Component {
     }
   }
   componentDidMount = () => {
-    const { apiUrl } = this.props
+    var { apiUrl } = this.props
+    apiUrl = apiUrl || '/api/messages'
     fetch(apiUrl)
       .then((res) => res.json())
       .then((messageList) => {
@@ -37,7 +38,7 @@ class Messages extends Component {
       <div className="h-100 bg-light rounded p-4">
         <div className="d-flex align-items-center justify-content-between mb-2">
             <h6 className="mb-0">Messages</h6>
-            <a href="">Show All</a>
+            <a href="dummy">Show All</a>
         </div>
         {
           this.state.messageList.map((item, i) => (
@@ -58,4 +59,4 @@ class Messages extends Component {
   }
 }
 
-export default withLocation(Messages)
+export default Messages

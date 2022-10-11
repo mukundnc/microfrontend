@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b50c31fd.css",
+    "main.js": "./static/js/main.js",
+    "main.js.map": "./static/js/main.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.39078152b3cbbc61ee33250274507ce6.js": "./precache-manifest.39078152b3cbbc61ee33250274507ce6.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.b50c31fd.css.map": "./static/css/main.b50c31fd.css.map",
+    "static/media/user.jpg": "./static/media/user.c20fd3fc.jpg"
+  }
+}

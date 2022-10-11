@@ -6,12 +6,13 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "1.1.5",
-    "react-to-webcomponent": "^2.0.0-alpha.0"
+    "react-scripts": "3.1.2",
+    "react-to-webcomponent": "^2.0.0-alpha.0",
+    "rewire": "^4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "node --openssl-legacy-provider ./devops/build.js",
     "postbuild": "node ./devops/postbuild.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -27,6 +28,12 @@
   "bugs": {
     "url": "https://github.com/therj/signature-board/issues"
   },
-  "homepage": "https://github.com/therj/signature-board#readme",
-  "proxy": "http://localhost:3000"
+  "homepage": ".",
+  "proxy": "http://localhost:3000",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
