@@ -8,10 +8,10 @@
     <script src="https://unpkg.com/vue@2.7.10/dist/vue.js"></script>
     <script src="./app1/index.js"></script>
     <script src="./app2/index.js"></script>
-    <!-- <script src="./v-app/index.js"></script>
-    <script src="./r-app/index.js"></script> -->
+    <script src="./v-app/index.js"></script>
+    <script src="./r-app/index.js"></script>
     <script src="./index.js"></script>
-    <script src="./r-app-chat/static/js/main.js"></script>
+    <script src="./r-app-chat/index.js"></script>
     <script src="./v-app-todo/vue-app-todo.js"></script>
     <style>
         #main {
@@ -50,27 +50,27 @@
       </div>
       </div>
       <div class="row">
-        // <div class="cell">
-        //   <vue-app></vue-app>
-        // </div>
-        // <div class="cell">
-        //   <react-app></react-app>
-        // </div>
+        <div class="cell">
+          <vue-app api-url="/api/msgs"></vue-app>
+        </div>
+        <div class="cell">
+          <react-app></react-app>
+        </div>
       </div>
       <div class="row">
-        <react-app-chat></react-app-chat>
+        <react-app-chat api-url="/api/messages"></react-app-chat>
       </div> 
       <div class="row">
         <vue-app-todo api-url="/api/todos"></vue-app-todo>
       </div>  
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="cell">
         <embedded-webview src="http://localhost:8080/"></embedded-webview>
       </div>
       <div class="cell">
         <embedded-webview src="http://localhost:3001/"></embedded-webview>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

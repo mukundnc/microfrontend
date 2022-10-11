@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build:wc": "npm run build -- --target wc --name vue-app-todo src/App.vue",
+    "build:wc": "npm run build -- --target wc --name vue-app-todo src/App.vue",    
+    "postbuild:wc": "node ./devops/postbuild.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },

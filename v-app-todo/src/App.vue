@@ -1,8 +1,6 @@
 <template>
   <!-- <Suspense> -->
     <div class="main">
-      <h1>Todos</h1>
-      <h2>{{ apiUrl }}</h2>
       <!-- <AddTodo :addFn="addTodo" />
       <div v-for="todo in todos" :key="todo.id">      
         <ToDo :msg="todo.msg" :check="todo.check" :onCheck="updateTodo" :id="todo.id"/>
